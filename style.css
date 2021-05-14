@@ -14,9 +14,15 @@ body {
 }
 
 body .card {
-  width: 1440px;
+  max-width: 1080px;
   height: 100%;
   background-color: #1b1938;
+  margin: auto;
+  border-radius: 0.5em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
 }
 
 body .card .text {
@@ -41,5 +47,10 @@ body .card .text #stats .statsheading {
 
 body .card .text #stats .namestat {
   color: 0, 0%, 100%, 0.6;
+  /* text-decoration: to-upper-case($string: ""); */
+}
+
+body .card .image {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

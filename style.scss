@@ -23,13 +23,14 @@ body {
     font-size: 62.5%;
 
     .card {
-        width: 1440px;
+        max-width: 1080px;
         height: 100%;
         background-color: $cardbg;
         margin: auto;
+        border-radius: 0.5em;
 
-/*         display: grid;
-        grid-template-columns: 1fr 1fr; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
 
         .text {
             color: $mainhs;
