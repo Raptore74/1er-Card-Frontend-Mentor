@@ -1,57 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 
 body {
-font-family: 'Inter', sans-serif;
-font-size: 15px;
-/* font-family: 'Lexend Deca', sans-serif;*/
- background-color: hsl(233, 47%, 7%);
+  background-color: #090b1a;
+  min-height: 100%;
+  font-size: 62.5%;
 }
 
-.card {
-    display: grid;
-    gap: 20px;
-    background-color: hsl(244, 38%, 16%);
-    width: 70%;
-    border-radius: 5px;
-    margin: auto;
-
-    grid-template-areas:
-        "image"        
-        "text";
+body .card {
+  width: 1440px;
+  height: 100%;
+  background-color: #1b1938;
 }
 
-.text {
-    grid-area: "text";
-    color: hsl(0, 0%, 100%);
+body .card .text {
+  color: white;
 }
 
-#span1 {
-    color: hsl(277, 64%, 61%);
+body .card .text #title {
+  font-size: 3em;
 }
 
-.image {
-    grid-area: "image";
-    width: 100%;
+body .card .text #title #span1 {
+  color: #aa5cdb;
 }
 
-.attribution { 
-    font-size: 11px; text-align: center; 
+body .card .text #paragraph {
+  color: rgba(255, 255, 255, 0.75);
 }
 
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+body .card .text #stats .statsheading {
+  color: white;
 }
 
-@media (min-width: 600px) {
-    .card {
-        grid-template-areas: 
-            "text" "image";
-    }
+body .card .text #stats .namestat {
+  color: 0, 0%, 100%, 0.6;
 }
+/*# sourceMappingURL=style.css.map */
