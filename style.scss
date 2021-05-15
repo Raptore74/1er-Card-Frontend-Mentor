@@ -22,44 +22,57 @@ body {
     min-height: 100%;
     font-size: 62.5%;
 
-    .card {
+    .container {
         max-width: 1080px;
-        height: 100%;
-        background-color: $cardbg;
         margin: auto;
-        border-radius: 0.5em;
 
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-
-        .text {
-            color: $mainhs;
-
-            #title {
-                font-size: 3em;
-                #span1 {
-                    color: $accent;
+        
+        .card {
+            max-width: 100%;
+            height: 100%;
+            background-color: $cardbg;
+            border-radius: 0.5em;
+            
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            
+            .text {
+                color: $mainhs;
+                
+                #title {
+                    font-size: 3em;
+                    #span1 {
+                        color: $accent;
+                    }
                 }
-            }
-
-            #paragraph {
-                color: $paragraph;
-            }
-
-            #stats {
-                .statsheading {
-                    color: $mainhs;
+                
+                #paragraph {
+                    color: $paragraph;
                 }
-                .namestat {
-                    color: $stathead;
-                    /* text-decoration: to-upper-case($string: ""); */
+                
+                #stats {
+                    .statsheading {
+                        color: $mainhs;
+                    }
+                    .namestat {
+                        color: $stathead;
+                        text-transform: uppercase;
+                    }
                 }
+                
             }
-
+            
+            .image {
+                width: 100%;
+            }
         }
 
-        .image {
-            width: 100%;
+        .attribution { 
+            font-size: 11px; text-align: center; 
+        }
+        
+        .attribution a { 
+            color: hsl(228, 45%, 44%); 
         }
     }
 }

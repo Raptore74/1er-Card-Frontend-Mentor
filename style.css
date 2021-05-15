@@ -13,11 +13,15 @@ body {
   font-size: 62.5%;
 }
 
-body .card {
+body .container {
   max-width: 1080px;
+  margin: auto;
+}
+
+body .container .card {
+  max-width: 100%;
   height: 100%;
   background-color: #1b1938;
-  margin: auto;
   border-radius: 0.5em;
   display: -ms-grid;
   display: grid;
@@ -25,32 +29,41 @@ body .card {
       grid-template-columns: 1fr 1fr;
 }
 
-body .card .text {
+body .container .card .text {
   color: white;
 }
 
-body .card .text #title {
+body .container .card .text #title {
   font-size: 3em;
 }
 
-body .card .text #title #span1 {
+body .container .card .text #title #span1 {
   color: #aa5cdb;
 }
 
-body .card .text #paragraph {
+body .container .card .text #paragraph {
   color: rgba(255, 255, 255, 0.75);
 }
 
-body .card .text #stats .statsheading {
+body .container .card .text #stats .statsheading {
   color: white;
 }
 
-body .card .text #stats .namestat {
+body .container .card .text #stats .namestat {
   color: 0, 0%, 100%, 0.6;
-  /* text-decoration: to-upper-case($string: ""); */
+  text-transform: uppercase;
 }
 
-body .card .image {
+body .container .card .image {
   width: 100%;
+}
+
+body .container .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+body .container .attribution a {
+  color: #3e52a3;
 }
 /*# sourceMappingURL=style.css.map */
