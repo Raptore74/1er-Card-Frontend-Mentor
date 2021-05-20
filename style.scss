@@ -22,10 +22,6 @@ body {
     //min-height: 100%;
     font-size: 62.5%;
 
-    .container {
-        //max-width: 1080px;
-        margin: 20vh auto;
-
         .card {
             width: 1080px;
             //height: 100%;
@@ -33,14 +29,17 @@ body {
             border-radius: 1.5em;
             display: flex;
             justify-content: space-between;
-            align-items: center;
             overflow: hidden;
             
             .text {
+                display: flex;
+                flex-direction: column;
                 color: $mainhs;
+                padding: 7em;
                 
                 #title {
                     font-size: 3em;
+                    margin-bottom: 1em;
                     #span1 {
                         color: $accent;
                     }
@@ -48,21 +47,37 @@ body {
                 
                 #paragraph {
                     color: $paragraph;
+                    font-size: 1.9em;
+                    margin-bottom: 2em;
                 }
                 
                 #stats {
-                    .statsheading {
-                        color: $mainhs;
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    .item {
+                        .statsheading {
+                            color: $mainhs;
+                            font-size: 2em;
+                            margin-bottom: 1em;
+                        }
+                        .namestat {
+                            color: $stathead;
+                            font-size: 1em;
+                            text-transform: uppercase;
+                        }
                     }
-                    .namestat {
-                        color: $stathead;
-                        text-transform: uppercase;
+                    
+                   
                     }
+                    
                 }
                 
             }
             
             .image {
+                margin: 0;
+                padding: 0;
                 //width: 100%;
             }
         }
@@ -75,5 +90,3 @@ body {
         .attribution a { 
             color: hsl(228, 45%, 44%); 
         }
-    }
-}

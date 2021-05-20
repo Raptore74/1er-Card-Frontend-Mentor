@@ -12,11 +12,7 @@ body {
   font-size: 62.5%;
 }
 
-body .container {
-  margin: 20vh auto;
-}
-
-body .container .card {
+body .card {
   width: 1080px;
   background-color: #1b1938;
   border-radius: 1.5em;
@@ -26,43 +22,68 @@ body .container .card {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   overflow: hidden;
 }
 
-body .container .card .text {
+body .card .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   color: white;
+  padding: 7em;
 }
 
-body .container .card .text #title {
+body .card .text #title {
   font-size: 3em;
+  margin-bottom: 1em;
 }
 
-body .container .card .text #title #span1 {
+body .card .text #title #span1 {
   color: #aa5cdb;
 }
 
-body .container .card .text #paragraph {
+body .card .text #paragraph {
   color: rgba(255, 255, 255, 0.75);
+  font-size: 1.9em;
+  margin-bottom: 2em;
 }
 
-body .container .card .text #stats .statsheading {
+body .card .text #stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .card .text #stats .item .statsheading {
   color: white;
+  font-size: 2em;
+  margin-bottom: 1em;
 }
 
-body .container .card .text #stats .namestat {
+body .card .text #stats .item .namestat {
   color: 0, 0%, 100%, 0.6;
+  font-size: 1em;
   text-transform: uppercase;
 }
 
-body .container .attribution {
+body .image {
+  margin: 0;
+  padding: 0;
+}
+
+.attribution {
   font-size: 11px;
   text-align: center;
 }
 
-body .container .attribution a {
+.attribution a {
   color: #3e52a3;
 }
 /*# sourceMappingURL=style.css.map */
