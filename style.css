@@ -38,6 +38,8 @@ body .card .text {
 }
 
 body .card .text #title {
+  font-family: 'Inter';
+  font-weight: 700;
   font-size: 3em;
   margin-bottom: 1em;
 }
